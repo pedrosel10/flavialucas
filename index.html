@@ -6,671 +6,9 @@
     <title>30 Exercícios de Confiança para Falar em Público</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        :root {
-            --bg-dark: #060B19;
-            --bg-card: #111827;
-            --bg-card-hover: #1F2937;
-            --text-main: #F9FAFB;
-            --text-muted: #9CA3AF;
-            --accent-orange: #F97316;
-            --accent-orange-hover: #EA580C;
-            --accent-blue: #3B82F6;
-            --border-color: rgba(255, 255, 255, 0.1);
-            --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #060B19 100%);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        section {
-            padding: 80px 0;
-            position: relative;
-        }
-
-        h1, h2, h3 {
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-
-        .text-gradient {
-            background: linear-gradient(to right, #FFFFFF, #9CA3AF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--accent-orange);
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 1.125rem;
-            padding: 18px 40px;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--accent-orange-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px -5px rgba(249, 115, 22, 0.5);
-        }
-
-        /* Top Bar */
-        .top-bar {
-            background-color: rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid var(--border-color);
-            padding: 12px 0;
-            text-align: center;
-            font-size: 0.875rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: var(--gradient-primary);
-            padding-top: 60px;
-            padding-bottom: 100px;
-            overflow: hidden;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        @media (min-width: 992px) {
-            .hero-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .hero-content h2 {
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            margin-bottom: 16px;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 24px;
-        }
-
-        @media (min-width: 768px) {
-            .hero-content h1 {
-                font-size: 4rem;
-            }
-        }
-
-        .hero-content p {
-            font-size: 1.125rem;
-            color: var(--text-muted);
-            margin-bottom: 40px;
-            max-width: 500px;
-        }
-
-        .hero-features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 20px;
-        }
-
-        .feature-card span {
-            display: block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-        }
-
-        .feature-card strong {
-            font-size: 1rem;
-            color: var(--text-main);
-        }
-
-        .hero-image {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            filter: drop-shadow(0 25px 50px rgba(0,0,0,0.5));
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            width: 120%;
-            height: 120%;
-            background: radial-gradient(circle, rgba(59,130,246,0.2) 0%, rgba(0,0,0,0) 70%);
-            top: -10%;
-            left: -10%;
-            z-index: -1;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background-color: var(--bg-dark);
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 24px;
-        }
-
-        @media (min-width: 768px) {
-            .testimonial-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .testimonial-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        .testimonial-card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 32px;
-            transition: transform 0.3s ease;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            background-color: var(--bg-card-hover);
-        }
-
-        .stars {
-            color: var(--accent-orange);
-            margin-bottom: 16px;
-            display: flex;
-            gap: 4px;
-        }
-
-        .testimonial-text {
-            font-size: 1rem;
-            font-style: italic;
-            color: var(--text-muted);
-            margin-bottom: 24px;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .testimonial-author img {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .author-info h4 {
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .author-info p {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        /* Problem Section */
-        .problem {
-            background: linear-gradient(to bottom, var(--bg-dark), #0A1128);
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-        }
-
-        .problem-quotes {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            max-width: 800px;
-            margin: 40px auto;
-        }
-
-        .quote-item {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 4px solid var(--accent-blue);
-            text-align: left;
-            font-size: 1.125rem;
-            color: var(--text-muted);
-        }
-
-        .reasons-list {
-            text-align: left;
-            max-width: 800px;
-            margin: 60px auto 0;
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 24px;
-            padding: 40px;
-        }
-
-        .reasons-list h3 {
-            font-size: 1.5rem;
-            margin-bottom: 24px;
-            color: var(--accent-orange);
-        }
-
-        .reason-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 24px;
-        }
-
-        .reason-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .reason-number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background-color: rgba(59, 130, 246, 0.1);
-            color: var(--accent-blue);
-            border-radius: 50%;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        /* Steps Section */
-        .steps {
-            background-color: var(--bg-dark);
-        }
-
-        .step-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            margin-top: 60px;
-        }
-
-        @media (min-width: 768px) {
-            .step-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        .step-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 24px;
-            padding: 40px 32px;
-            text-align: center;
-            position: relative;
-        }
-
-        .step-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, var(--accent-blue), #1E3A8A);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 24px;
-            color: white;
-        }
-
-        .step-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 16px;
-        }
-
-        .step-card p {
-            color: var(--text-muted);
-            font-size: 0.9375rem;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: radial-gradient(circle at center, #111827 0%, var(--bg-dark) 100%);
-            padding: 100px 0;
-        }
-
-        .pricing-card {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--bg-card);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 32px;
-            padding: 40px 24px;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-            display: flex;
-            flex-direction: column;
-        }
-
-        @media (min-width: 768px) {
-            .pricing-card {
-                flex-direction: row;
-                padding: 40px;
-                gap: 40px;
-            }
-        }
-
-        .pricing-includes {
-            flex: 1;
-            padding-right: 24px;
-        }
-
-        @media (min-width: 768px) {
-            .pricing-includes {
-                border-right: 1px solid var(--border-color);
-            }
-        }
-
-        .pricing-includes h3 {
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            margin-bottom: 24px;
-        }
-
-        .include-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .include-item:last-child {
-            border-bottom: none;
-        }
-
-        .include-name {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 0.9375rem;
-        }
-
-        .include-price {
-            font-weight: 600;
-            color: var(--text-muted);
-        }
-
-        .pricing-total {
-            margin-top: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: rgba(255,255,255,0.03);
-            border-radius: 12px;
-        }
-
-        .pricing-total span {
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-        }
-
-        .pricing-total strong {
-            font-size: 1.5rem;
-        }
-
-        .pricing-action {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        @media (min-width: 768px) {
-            .pricing-action {
-                margin-top: 0;
-            }
-        }
-
-        .pricing-action h3 {
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent-orange);
-            margin-bottom: 8px;
-        }
-
-        .price-display {
-            font-size: 4rem;
-            font-weight: 800;
-            line-height: 1;
-            margin-bottom: 24px;
-        }
-
-        .price-display span {
-            font-size: 1.5rem;
-            color: var(--text-muted);
-            text-decoration: line-through;
-            margin-right: 12px;
-            font-weight: 400;
-        }
-
-        .guarantee {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            margin-top: 16px;
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        /* Target Audience */
-        .audience {
-            padding: 80px 0;
-            background-color: var(--bg-dark);
-        }
-
-        .audience-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        @media (min-width: 768px) {
-            .audience-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        .audience-box {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 24px;
-            padding: 40px;
-        }
-
-        .audience-box.yes {
-            border-top: 4px solid #10B981;
-        }
-
-        .audience-box.no {
-            border-top: 4px solid #EF4444;
-        }
-
-        .audience-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-            font-size: 1rem;
-            color: var(--text-muted);
-        }
-
-        /* Author */
-        .author {
-            background-color: #0A1128;
-            padding: 100px 0;
-        }
-
-        .author-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        @media (min-width: 768px) {
-            .author-container {
-                grid-template-columns: 1fr 1.5fr;
-            }
-        }
-
-        .author-image img {
-            width: 100%;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-
-        .author-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 24px;
-        }
-
-        .author-content p {
-            color: var(--text-muted);
-            margin-bottom: 16px;
-            font-size: 1.125rem;
-        }
-
-        .author-stats {
-            margin-top: 32px;
-        }
-
-        .stat-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-            color: var(--text-muted);
-        }
-
-        /* FAQ */
-        .faq {
-            background-color: var(--bg-dark);
-            padding: 100px 0;
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            margin-bottom: 16px;
-            padding: 24px;
-        }
-
-        .faq-question {
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .faq-answer {
-            color: var(--text-muted);
-            font-size: 1rem;
-            padding-left: 36px;
-        }
-
-        /* Footer CTA */
-        .footer-cta {
-            background: var(--gradient-primary);
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -683,24 +21,25 @@
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
-                <h2>Você tem a ideia. A voz é que trava.</h2>
+                <span class="eyebrow">VOCÊ TEM A IDEIA. A VOZ É QUE TRAVA.</span>
                 <h1>Entre na próxima reunião com voz firme e <span class="text-gradient">sem aperto no peito.</span></h1>
                 <p>Em 6 semanas, você chega mais preparada para apresentação, reunião ou entrevista com <strong>30 exercícios diários criados pela professora Flávia Lucas</strong>, sem decoreba, sem teoria solta e sem precisar nascer com dom.</p>
                 
                 <div class="hero-features">
-                    <div class="feature-card">
-                        <span>Formato</span>
-                        <strong>PDF + checklist + bônus</strong>
+                    <div class="feature-pill">
+                        <i data-lucide="file-text"></i> PDF + checklist + bônus
                     </div>
-                    <div class="feature-card">
-                        <span>Tempo Diário</span>
-                        <strong>15 a 25 minutos</strong>
+                    <div class="feature-pill">
+                        <i data-lucide="clock"></i> 15 a 25 min/dia
+                    </div>
+                    <div class="feature-pill">
+                        <i data-lucide="mic"></i> Destravar sua fala
                     </div>
                 </div>
 
-                <a href="#pricing" class="btn-primary">Quero Agora <i data-lucide="arrow-right" style="margin-left: 8px; width: 20px; height: 20px;"></i></a>
-                <div class="guarantee" style="justify-content: flex-start; margin-top: 24px;">
-                    <i data-lucide="shield-check" style="color: #10B981; width: 16px; height: 16px;"></i> Garantia de 7 dias e acesso imediato por e-mail
+                <a href="#pricing" class="btn-primary">Quero Agora <i data-lucide="arrow-right"></i></a>
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 20px; font-size: 0.875rem; color: var(--clr-text-muted);">
+                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 18px; height: 18px;"></i> Garantia de 7 dias e acesso imediato por e-mail
                 </div>
             </div>
             
@@ -710,22 +49,18 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
+            <span class="eyebrow orange"><i data-lucide="star"></i> RESULTADOS RELATADOS POR QUEM APLICOU OS EXERCÍCIOS</span>
+            
             <div class="testimonial-grid">
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                    </div>
+                    <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Caramba, eu sempre travava. Fiz os primeiros exercícios e apresentei o relatório sem gaguejar. Voz firme, olhar no olho. Saí da reunião orgulhoso de mim."</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=11" alt="Lucas">
+                        <div class="avatar avatar-1">L</div>
                         <div class="author-info">
                             <h4>Lucas</h4>
                             <p>Analista de TI</p>
@@ -735,16 +70,10 @@
 
                 <!-- Testimonial 2 -->
                 <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                    </div>
+                    <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Eu salvo mil dicas, mas na hora H eu travava. Esses 30 exercícios me deram um começo pronto. Abri a fala em 20 segundos e prendi a sala."</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=5" alt="Bruna">
+                        <div class="avatar avatar-2">B</div>
                         <div class="author-info">
                             <h4>Bruna</h4>
                             <p>Estagiária de Marketing</p>
@@ -754,16 +83,10 @@
 
                 <!-- Testimonial 3 -->
                 <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                    </div>
+                    <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Sério, eu falava igual metralhadora. Treinei respiração e pausas. Cronometrei: cai de 180 para 135 palavras por minuto. Ficou claro, sem parecer robô."</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=9" alt="Daniela">
+                        <div class="avatar avatar-3">D</div>
                         <div class="author-info">
                             <h4>Daniela</h4>
                             <p>Belo Horizonte</p>
@@ -773,16 +96,10 @@
 
                 <!-- Testimonial 4 -->
                 <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                    </div>
-                    <p class="testimonial-text">"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem branco."</p>
+                    <div class="quote-icon"><i data-lucide="message-square"></i></div>
+                    <p class="testimonial-text">"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem branco. Até brinquei com uma, a sala riu."</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=12" alt="Renato">
+                        <div class="avatar avatar-4">R</div>
                         <div class="author-info">
                             <h4>Renato</h4>
                             <p>Engenheiro Civil</p>
@@ -792,16 +109,10 @@
 
                 <!-- Testimonial 5 -->
                 <div class="testimonial-card">
-                    <div class="stars">
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                        <i data-lucide="star" fill="currentColor"></i>
-                    </div>
+                    <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Mano, usei antes da entrevista e foi tiro certo. Estruturei pitch de 60 segundos, mantive contato visual e mãos calmas. Saí com convite pra segunda etapa."</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=13" alt="Diego">
+                        <div class="avatar avatar-5">D</div>
                         <div class="author-info">
                             <h4>Diego</h4>
                             <p>Estudante de Administração</p>
@@ -814,124 +125,79 @@
 
     <!-- Problem Section -->
     <section class="problem">
-        <div class="container">
-            <h2 class="section-title">Na hora de falar, sua mente corre e sua voz some.</h2>
-            
-            <div class="problem-quotes">
-                <div class="quote-item">"Eu salvo mil dicas e, na hora H, eu travo."</div>
-                <div class="quote-item">"Eu não sei por onde começar uma fala curta."</div>
-                <div class="quote-item">"Será que eu tô falando rápido demais e ninguém entende?"</div>
-                <div class="quote-item">"E se perguntarem algo simples e eu apagar tudo da cabeça?"</div>
-                <div class="quote-item">"Eu ensaio horas e esqueço tudo quando abrem o microfone."</div>
+        <div class="container problem-container">
+            <div class="problem-text">
+                <span class="eyebrow">NA HORA DE FALAR</span>
+                <h2>Sua mente corre<br>e sua voz some.</h2>
             </div>
-
-            <div class="reasons-list">
-                <h3>Isso acontece porque…</h3>
-                
-                <div class="reason-item">
-                    <div class="reason-number">1</div>
-                    <div>Você tenta decorar palavra por palavra. Sua memória de trabalho sobrecarrega e dá branco.</div>
-                </div>
-                <div class="reason-item">
-                    <div class="reason-number">2</div>
-                    <div>Você pratica só na cabeça. Seu corpo não aprende ritmo, respiração e pausas.</div>
-                </div>
-                <div class="reason-item">
-                    <div class="reason-number">3</div>
-                    <div>Você não tem aberturas e fechamentos prontos. Sem ponto de partida, o cérebro entra em alerta.</div>
-                </div>
-                <div class="reason-item">
-                    <div class="reason-number">4</div>
-                    <div>Você chega com cafeína alta e postura fechada. Seu corpo lê perigo e corta o ar.</div>
-                </div>
-                <div class="reason-item">
-                    <div class="reason-number">5</div>
-                    <div>Você acumula dicas sem sequência de treino. Não é sua culpa; sem ordem, o cérebro não cria hábito.</div>
-                </div>
-                
-                <p style="margin-top: 32px; font-weight: 600; color: var(--text-main); font-size: 1.25rem;">E existe uma forma simples de resolver isso.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Steps Section -->
-    <section class="steps">
-        <div class="container">
-            <h2 class="section-title text-center">Funciona em 3 passos simples:</h2>
             
-            <div class="step-grid">
-                <div class="step-card">
-                    <div class="step-icon">
-                        <i data-lucide="download" style="width: 32px; height: 32px;"></i>
-                    </div>
-                    <h3>PASSO 1: Baixe e planeje</h3>
-                    <p>Baixe o material e leia a introdução em 10 minutos. Escolhe se vai em ritmo intensivo ou sustentável. Marca a primeira situação real onde quer aplicar.</p>
+            <div class="problem-list">
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Eu salvo mil dicas e, na hora H, eu travo."</p>
                 </div>
-                
-                <div class="step-card">
-                    <div class="step-icon">
-                        <i data-lucide="check-circle-2" style="width: 32px; height: 32px;"></i>
-                    </div>
-                    <h3>PASSO 2: Pratique 15 min</h3>
-                    <p>Faça 1 exercício por dia, 15 a 25 minutos. Cada exercício tem objetivo claro, instruções diretas e exemplo prático. Em 2 semanas o gráfico muda.</p>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Eu não sei por onde começar uma fala curta."</p>
                 </div>
-                
-                <div class="step-card">
-                    <div class="step-icon">
-                        <i data-lucide="mic" style="width: 32px; height: 32px;"></i>
-                    </div>
-                    <h3>PASSO 3: Aplique</h3>
-                    <p>Aplique numa apresentação, reunião ou entrevista real. Em 6 semanas, você entra na próxima situação importante com voz firme e ritmo controlado.</p>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Será que eu tô falando rápido demais e ninguém entende?"</p>
+                </div>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"E se perguntarem algo simples e eu apagar tudo da cabeça?"</p>
+                </div>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Todo mundo parece seguro e articulado, menos eu."</p>
+                </div>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Será que minha voz vai tremer na primeira frase da apresentação?"</p>
+                </div>
+                <div class="problem-item">
+                    <i data-lucide="alert-circle" class="alert-icon"></i>
+                    <p>"Eu ensaio horas e esqueço tudo quando abrem o microfone."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Audience Section -->
-    <section class="audience">
+    <!-- What You Get Section -->
+    <section class="what-you-get">
         <div class="container">
-            <div class="audience-grid">
-                <div class="audience-box yes">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 24px; color: #10B981;">Este material É pra você que:</h3>
-                    <div class="audience-item">
-                        <i data-lucide="check" style="color: #10B981; flex-shrink: 0;"></i>
-                        <span>Trava em apresentações na faculdade, estágio ou primeiras reuniões.</span>
-                    </div>
-                    <div class="audience-item">
-                        <i data-lucide="check" style="color: #10B981; flex-shrink: 0;"></i>
-                        <span>Precisa abrir uma fala curta e fica sem roteiro.</span>
-                    </div>
-                    <div class="audience-item">
-                        <i data-lucide="check" style="color: #10B981; flex-shrink: 0;"></i>
-                        <span>Já salvou mil dicas e, na hora H, travou.</span>
-                    </div>
-                    <div class="audience-item">
-                        <i data-lucide="check" style="color: #10B981; flex-shrink: 0;"></i>
-                        <span>Fala rápido, perde o fôlego e não passa segurança.</span>
-                    </div>
-                    <div class="audience-item">
-                        <i data-lucide="check" style="color: #10B981; flex-shrink: 0;"></i>
-                        <span>Está começando e nunca treinou respostas para perguntas.</span>
-                    </div>
+            <div class="wyg-container">
+                <div class="wyg-visual">
+                    <img src="book_mockup.png" alt="Mockup 30 Exercícios">
                 </div>
                 
-                <div class="audience-box no">
-                    <h3 style="font-size: 1.5rem; margin-bottom: 24px; color: #EF4444;">NÃO é pra você se:</h3>
-                    <div class="audience-item">
-                        <i data-lucide="x" style="color: #EF4444; flex-shrink: 0;"></i>
-                        <span>Espera milagre sem praticar por 1 a 2 horas.</span>
+                <div class="wyg-content">
+                    <span class="eyebrow">VEJA TUDO QUE VOCÊ RECEBE</span>
+                    <h2>Os materiais foram pensados para tirar você da teoria e levar para uma situação real de fala.</h2>
+                    
+                    <div class="wyg-item">
+                        <div class="wyg-icon"><i data-lucide="check-circle-2"></i></div>
+                        <div class="wyg-text">
+                            <div class="wyg-title">30 Exercícios de Confiança para Falar em Público <span class="badge">R$ 97</span></div>
+                            <p>PDF principal que destrava a ansiedade de falar em público em 6 semanas, com 1 exercício guiado por dia.</p>
+                        </div>
                     </div>
-                    <div class="audience-item">
-                        <i data-lucide="x" style="color: #EF4444; flex-shrink: 0;"></i>
-                        <span>Quer um curso longo de oratória com dezenas de aulas.</span>
+                    
+                    <div class="wyg-item">
+                        <div class="wyg-icon"><i data-lucide="check-square"></i></div>
+                        <div class="wyg-text">
+                            <div class="wyg-title">Checklist de Prática (A4) <span class="badge">R$ 37</span></div>
+                            <p>Acompanhe sua evolução marcando sua ansiedade antes e confiança depois de cada exercício.</p>
+                        </div>
                     </div>
-                    <div class="audience-item">
-                        <i data-lucide="x" style="color: #EF4444; flex-shrink: 0;"></i>
-                        <span>Não aceita seguir exercícios simples, do jeito que estão.</span>
-                    </div>
-                    <div class="audience-item">
-                        <i data-lucide="x" style="color: #EF4444; flex-shrink: 0;"></i>
-                        <span>Prefere que alguém faça por você, sem esforço.</span>
+                    
+                    <div class="wyg-item bonus">
+                        <div class="wyg-icon"><i data-lucide="gift"></i></div>
+                        <div class="wyg-text">
+                            <div class="wyg-title" style="color: var(--clr-accent-orange);">Bônus: Exercícios de Improvisação <span class="badge" style="color: var(--clr-accent-orange);">R$ 57</span></div>
+                            <p>Treine resposta ágil sob pressão para parar de travar em perguntas inesperadas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -940,53 +206,19 @@
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
-        <div class="container">
+        <div class="container" style="display: flex; justify-content: center;">
             <div class="pricing-card">
-                <div class="pricing-includes">
-                    <h3>Recapitulando tudo que você vai receber</h3>
-                    
-                    <div class="include-item">
-                        <div class="include-name">
-                            <i data-lucide="file-text" style="color: var(--text-muted); width: 20px;"></i>
-                            30 Exercícios de Confiança (PDF)
-                        </div>
-                        <div class="include-price">R$ 97</div>
-                    </div>
-                    
-                    <div class="include-item">
-                        <div class="include-name">
-                            <i data-lucide="check-square" style="color: var(--text-muted); width: 20px;"></i>
-                            Checklist de Prática (PDF A4)
-                        </div>
-                        <div class="include-price">R$ 37</div>
-                    </div>
-                    
-                    <div class="include-item">
-                        <div class="include-name">
-                            <i data-lucide="gift" style="color: var(--accent-orange); width: 20px;"></i>
-                            Bônus: Exercícios de Improvisação
-                        </div>
-                        <div class="include-price">R$ 57</div>
-                    </div>
-                    
-                    <div class="pricing-total">
-                        <span>Total</span>
-                        <strong>R$ 191</strong>
-                    </div>
+                <span class="eyebrow" style="justify-content: center;">OFERTA DE ENTRADA</span>
+                <p style="color: var(--clr-text-muted); margin-bottom: 8px;">De R$ 191 por apenas</p>
+                <div class="price-display">
+                    <span>R$ 191</span>R$ 47
                 </div>
-                
-                <div class="pricing-action">
-                    <h3>Oferta de Entrada</h3>
-                    <div class="price-display">
-                        <span>De R$ 191 por</span><br>
-                        R$ 47
-                    </div>
-                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 24px;">Por tudo isso, você poderia esperar pagar bem mais. Baixe agora e comece hoje. Se não servir, pede reembolso em até 7 dias.</p>
-                    
-                    <a href="#" class="btn-primary" style="max-width: 100%;">Quero Agora <i data-lucide="arrow-right" style="margin-left: 8px; width: 20px; height: 20px;"></i></a>
-                    <div class="guarantee">
-                        <i data-lucide="shield-check" style="color: #10B981; width: 16px; height: 16px;"></i> Garantia de 7 dias
-                    </div>
+                <p style="color: var(--clr-text-muted); font-size: 0.9375rem; margin-bottom: 32px; line-height: 1.7;">
+                    Por tudo isso, você poderia esperar pagar bem mais. Em vez disso, você baixa agora e começa hoje. Se não servir para o seu momento, pede reembolso em até 7 dias e o valor volta sem pergunta desnecessária.
+                </p>
+                <a href="#" class="btn-primary" style="max-width: 100%;">Quero Agora <i data-lucide="arrow-right"></i></a>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; font-size: 0.875rem; color: var(--clr-text-muted);">
+                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 16px; height: 16px;"></i> Garantia de 7 dias
                 </div>
             </div>
         </div>
@@ -995,28 +227,29 @@
     <!-- Author Section -->
     <section class="author">
         <div class="container author-container">
+            <div class="author-image">
+                <img src="flavia_lucas_photo.png" alt="Flávia Lucas">
+            </div>
             <div class="author-content">
+                <span class="eyebrow">SOBRE A AUTORA</span>
                 <h2>Eu sei como é encarar uma sala e sentir o peito apertar.</h2>
                 <p>Eu, Flávia Lucas, já passei por isso. Minha mão suou. Minha voz tremeu. Uma vez, esqueci a primeira frase e quis fugir da sala.</p>
                 <p>Depois de mais de 20 anos dando aula, descobri uma coisa que mudou meu jogo: falar em público não é dom. É treino específico. E a escola nunca te ensinou isso.</p>
                 
                 <div class="author-stats">
                     <div class="stat-item">
-                        <i data-lucide="arrow-right" style="color: var(--accent-orange); flex-shrink: 0; margin-top: 4px;"></i>
-                        <span><strong>+1,6 milhão de seguidores</strong> construídos sobre uma única promessa: ensinar a falar de um jeito que ninguém esquece.</span>
+                        <i data-lucide="check" class="stat-icon"></i>
+                        <p><strong>+1,6 milhão de seguidores</strong> construídos sobre ensinar a falar de um jeito que ninguém esquece.</p>
                     </div>
                     <div class="stat-item">
-                        <i data-lucide="arrow-right" style="color: var(--accent-orange); flex-shrink: 0; margin-top: 4px;"></i>
-                        <span><strong>+8.000 alunos formados</strong> em programas que moldaram vozes, presenças e trajetórias.</span>
+                        <i data-lucide="check" class="stat-icon"></i>
+                        <p><strong>+8.000 alunos formados</strong> em programas que moldaram vozes, presenças e trajetórias.</p>
                     </div>
                     <div class="stat-item">
-                        <i data-lucide="arrow-right" style="color: var(--accent-orange); flex-shrink: 0; margin-top: 4px;"></i>
-                        <span>Mais de duas décadas de domínio sobre a língua, a palavra e a arte de comunicar.</span>
+                        <i data-lucide="check" class="stat-icon"></i>
+                        <p>Mais de duas décadas de domínio sobre a língua, a palavra e a arte de comunicar.</p>
                     </div>
                 </div>
-            </div>
-            <div class="author-image">
-                <img src="flavia_lucas_photo.png" alt="Flávia Lucas">
             </div>
         </div>
     </section>
@@ -1024,34 +257,34 @@
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container faq-container">
-            <h2 class="section-title text-center">Perguntas Frequentes</h2>
+            <h2 style="font-size: clamp(2rem, 3vw, 2.5rem); text-align: center; margin-bottom: 40px;">Perguntas Frequentes</h2>
             
             <div class="faq-item">
                 <div class="faq-question">
-                    <i data-lucide="help-circle" style="color: var(--accent-blue);"></i> Como vou receber e acessar?
+                    <i data-lucide="help-circle"></i> Como vou receber e acessar?
                 </div>
                 <div class="faq-answer">Você recebe no e-mail logo após o pagamento. Acesso imediato, sem espera. É só baixar o PDF e começar — do celular, tablet ou computador.</div>
             </div>
             
             <div class="faq-item">
                 <div class="faq-question">
-                    <i data-lucide="help-circle" style="color: var(--accent-blue);"></i> Funciona pro meu caso?
+                    <i data-lucide="help-circle"></i> Funciona pro meu caso?
                 </div>
                 <div class="faq-answer">Sim. Serve pra apresentações de trabalho, reuniões com chefe, entrevistas, palestras, aulas, pitches. Se você trava ao falar em público — de qualquer forma — esse material foi feito pra ti.</div>
             </div>
             
             <div class="faq-item">
                 <div class="faq-question">
-                    <i data-lucide="help-circle" style="color: var(--accent-blue);"></i> E se eu não gostar?
+                    <i data-lucide="help-circle"></i> E se eu não gostar?
                 </div>
                 <div class="faq-answer">Tu tem 7 dias de garantia incondicional. Não serviu? Pede reembolso por e-mail que a gente devolve sem perguntar. Simples assim.</div>
             </div>
             
             <div class="faq-item">
                 <div class="faq-question">
-                    <i data-lucide="help-circle" style="color: var(--accent-blue);"></i> Em quanto tempo vejo resultado?
+                    <i data-lucide="help-circle"></i> Em quanto tempo vejo resultado?
                 </div>
-                <div class="faq-answer">O primeiro exercício (respiração 4-6) já reduz a aceleração que você sente antes de falar — mesmo dia. A mudança consistente acontece nas primeiras 2-3 semanas de prática. Em 6 semanas, você treinou os 30 exercícios.</div>
+                <div class="faq-answer">O primeiro exercício já reduz a aceleração que você sente antes de falar — mesmo dia. A mudança consistente acontece nas primeiras 2-3 semanas de prática. Em 6 semanas, você treinou todos os 30 exercícios.</div>
             </div>
         </div>
     </section>
@@ -1059,8 +292,8 @@
     <!-- Footer CTA -->
     <section class="footer-cta">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 32px;">Isso é possível pra ti. E começa no primeiro exercício.</h2>
-            <a href="#pricing" class="btn-primary">Quero os 30 Exercícios Agora <i data-lucide="arrow-right" style="margin-left: 8px; width: 20px; height: 20px;"></i></a>
+            <h2>Isso é possível pra ti. E começa no primeiro exercício.</h2>
+            <a href="#pricing" class="btn-primary" style="margin: 0 auto;">Quero os 30 Exercícios Agora <i data-lucide="arrow-right"></i></a>
         </div>
     </section>
 
