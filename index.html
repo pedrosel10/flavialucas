@@ -6,11 +6,17 @@
     <title>30 Exercícios de Confiança para Falar em Público</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Ambient Glowing Background -->
+    <div class="ambient-bg">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+    </div>
 
     <!-- Top Bar -->
     <div class="top-bar">
@@ -20,7 +26,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-grid">
-            <div class="hero-content">
+            <div class="hero-content reveal">
                 <span class="eyebrow">VOCÊ TEM A IDEIA. A VOZ É QUE TRAVA.</span>
                 <h1>Entre na próxima reunião com voz firme e <span class="text-gradient">sem aperto no peito.</span></h1>
                 <p>Em 6 semanas, você chega mais preparada para apresentação, reunião ou entrevista com <strong>30 exercícios diários criados pela professora Flávia Lucas</strong>, sem decoreba, sem teoria solta e sem precisar nascer com dom.</p>
@@ -38,12 +44,12 @@
                 </div>
 
                 <a href="#pricing" class="btn-primary">Quero Agora <i data-lucide="arrow-right"></i></a>
-                <div style="display: flex; align-items: center; gap: 8px; margin-top: 20px; font-size: 0.875rem; color: var(--clr-text-muted);">
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 24px; font-size: var(--fs-sm); color: var(--clr-text-muted); font-weight: 500;">
                     <i data-lucide="shield-check" style="color: var(--clr-success); width: 18px; height: 18px;"></i> Garantia de 7 dias e acesso imediato por e-mail
                 </div>
             </div>
             
-            <div class="hero-image">
+            <div class="hero-image reveal delay-1">
                 <img src="book_mockup.png" alt="Mockup 30 Exercícios de Confiança para Falar em Público">
             </div>
         </div>
@@ -52,11 +58,10 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <span class="eyebrow orange"><i data-lucide="star"></i> RESULTADOS RELATADOS POR QUEM APLICOU OS EXERCÍCIOS</span>
+            <span class="eyebrow orange reveal"><i data-lucide="star"></i> RESULTADOS RELATADOS POR QUEM APLICOU</span>
             
             <div class="testimonial-grid">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
+                <div class="testimonial-card glass-card reveal">
                     <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Caramba, eu sempre travava. Fiz os primeiros exercícios e apresentei o relatório sem gaguejar. Voz firme, olhar no olho. Saí da reunião orgulhoso de mim."</p>
                     <div class="testimonial-author">
@@ -68,8 +73,7 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
+                <div class="testimonial-card glass-card reveal delay-1">
                     <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Eu salvo mil dicas, mas na hora H eu travava. Esses 30 exercícios me deram um começo pronto. Abri a fala em 20 segundos e prendi a sala."</p>
                     <div class="testimonial-author">
@@ -81,8 +85,7 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card">
+                <div class="testimonial-card glass-card reveal delay-2">
                     <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Sério, eu falava igual metralhadora. Treinei respiração e pausas. Cronometrei: cai de 180 para 135 palavras por minuto. Ficou claro, sem parecer robô."</p>
                     <div class="testimonial-author">
@@ -94,10 +97,9 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card">
+                <div class="testimonial-card glass-card reveal">
                     <div class="quote-icon"><i data-lucide="message-square"></i></div>
-                    <p class="testimonial-text">"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem branco. Até brinquei com uma, a sala riu."</p>
+                    <p class="testimonial-text">"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem branco."</p>
                     <div class="testimonial-author">
                         <div class="avatar avatar-4">R</div>
                         <div class="author-info">
@@ -107,8 +109,7 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 5 -->
-                <div class="testimonial-card">
+                <div class="testimonial-card glass-card reveal delay-1">
                     <div class="quote-icon"><i data-lucide="message-square"></i></div>
                     <p class="testimonial-text">"Mano, usei antes da entrevista e foi tiro certo. Estruturei pitch de 60 segundos, mantive contato visual e mãos calmas. Saí com convite pra segunda etapa."</p>
                     <div class="testimonial-author">
@@ -126,37 +127,37 @@
     <!-- Problem Section -->
     <section class="problem">
         <div class="container problem-container">
-            <div class="problem-text">
+            <div class="problem-text reveal">
                 <span class="eyebrow">NA HORA DE FALAR</span>
                 <h2>Sua mente corre<br>e sua voz some.</h2>
             </div>
             
             <div class="problem-list">
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Eu salvo mil dicas e, na hora H, eu travo."</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Eu não sei por onde começar uma fala curta."</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Será que eu tô falando rápido demais e ninguém entende?"</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"E se perguntarem algo simples e eu apagar tudo da cabeça?"</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Todo mundo parece seguro e articulado, menos eu."</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Será que minha voz vai tremer na primeira frase da apresentação?"</p>
                 </div>
-                <div class="problem-item">
+                <div class="problem-item glass-card reveal delay-1">
                     <i data-lucide="alert-circle" class="alert-icon"></i>
                     <p>"Eu ensaio horas e esqueço tudo quando abrem o microfone."</p>
                 </div>
@@ -167,7 +168,7 @@
     <!-- What You Get Section -->
     <section class="what-you-get">
         <div class="container">
-            <div class="wyg-container">
+            <div class="wyg-container glass-card reveal">
                 <div class="wyg-visual">
                     <img src="book_mockup.png" alt="Mockup 30 Exercícios">
                 </div>
@@ -195,7 +196,7 @@
                     <div class="wyg-item bonus">
                         <div class="wyg-icon"><i data-lucide="gift"></i></div>
                         <div class="wyg-text">
-                            <div class="wyg-title" style="color: var(--clr-accent-orange);">Bônus: Exercícios de Improvisação <span class="badge" style="color: var(--clr-accent-orange);">R$ 57</span></div>
+                            <div class="wyg-title" style="color: var(--clr-accent-orange);">Bônus: Exercícios de Improvisação <span class="badge" style="color: var(--clr-accent-orange); border: 1px solid rgba(249,115,22,0.3);">R$ 57</span></div>
                             <p>Treine resposta ágil sob pressão para parar de travar em perguntas inesperadas.</p>
                         </div>
                     </div>
@@ -207,18 +208,18 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container" style="display: flex; justify-content: center;">
-            <div class="pricing-card">
-                <span class="eyebrow" style="justify-content: center;">OFERTA DE ENTRADA</span>
-                <p style="color: var(--clr-text-muted); margin-bottom: 8px;">De R$ 191 por apenas</p>
+            <div class="pricing-card glass-card reveal">
+                <span class="eyebrow orange" style="justify-content: center;">OFERTA ESPECIAL</span>
+                <p style="color: var(--clr-text-muted); margin-bottom: 8px; font-weight: 500;">De R$ 191 por apenas</p>
                 <div class="price-display">
                     <span>R$ 191</span>R$ 47
                 </div>
-                <p style="color: var(--clr-text-muted); font-size: 0.9375rem; margin-bottom: 32px; line-height: 1.7;">
+                <p style="color: var(--clr-text-muted); font-size: var(--fs-base); margin-bottom: 40px; font-weight: 300;">
                     Por tudo isso, você poderia esperar pagar bem mais. Em vez disso, você baixa agora e começa hoje. Se não servir para o seu momento, pede reembolso em até 7 dias e o valor volta sem pergunta desnecessária.
                 </p>
-                <a href="#" class="btn-primary" style="max-width: 100%;">Quero Agora <i data-lucide="arrow-right"></i></a>
-                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; font-size: 0.875rem; color: var(--clr-text-muted);">
-                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 16px; height: 16px;"></i> Garantia de 7 dias
+                <a href="#" class="btn-primary" style="width: 100%;">Quero Garantir Agora <i data-lucide="arrow-right"></i></a>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 24px; font-size: var(--fs-sm); color: var(--clr-text-muted); font-weight: 500;">
+                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 18px; height: 18px;"></i> Risco Zero: Garantia Incondicional de 7 dias
                 </div>
             </div>
         </div>
@@ -227,10 +228,10 @@
     <!-- Author Section -->
     <section class="author">
         <div class="container author-container">
-            <div class="author-image">
+            <div class="author-image reveal">
                 <img src="flavia_lucas_photo.png" alt="Flávia Lucas">
             </div>
-            <div class="author-content">
+            <div class="author-content reveal delay-1">
                 <span class="eyebrow">SOBRE A AUTORA</span>
                 <h2>Eu sei como é encarar uma sala e sentir o peito apertar.</h2>
                 <p>Eu, Flávia Lucas, já passei por isso. Minha mão suou. Minha voz tremeu. Uma vez, esqueci a primeira frase e quis fugir da sala.</p>
@@ -238,15 +239,15 @@
                 
                 <div class="author-stats">
                     <div class="stat-item">
-                        <i data-lucide="check" class="stat-icon"></i>
-                        <p><strong>+1,6 milhão de seguidores</strong> construídos sobre ensinar a falar de um jeito que ninguém esquece.</p>
+                        <i data-lucide="check-circle-2" class="stat-icon"></i>
+                        <p><strong style="color: var(--clr-text-main);">+1,6 milhão de seguidores</strong> construídos sobre ensinar a falar de um jeito que ninguém esquece.</p>
                     </div>
                     <div class="stat-item">
-                        <i data-lucide="check" class="stat-icon"></i>
-                        <p><strong>+8.000 alunos formados</strong> em programas que moldaram vozes, presenças e trajetórias.</p>
+                        <i data-lucide="check-circle-2" class="stat-icon"></i>
+                        <p><strong style="color: var(--clr-text-main);">+8.000 alunos formados</strong> em programas que moldaram vozes, presenças e trajetórias.</p>
                     </div>
                     <div class="stat-item">
-                        <i data-lucide="check" class="stat-icon"></i>
+                        <i data-lucide="check-circle-2" class="stat-icon"></i>
                         <p>Mais de duas décadas de domínio sobre a língua, a palavra e a arte de comunicar.</p>
                     </div>
                 </div>
@@ -256,31 +257,31 @@
 
     <!-- FAQ Section -->
     <section class="faq">
-        <div class="container faq-container">
-            <h2 style="font-size: clamp(2rem, 3vw, 2.5rem); text-align: center; margin-bottom: 40px;">Perguntas Frequentes</h2>
+        <div class="container faq-container reveal">
+            <h2 style="font-size: var(--fs-xxl); text-align: center; margin-bottom: 4rem; font-weight: 800;">Perguntas Frequentes</h2>
             
-            <div class="faq-item">
+            <div class="faq-item glass-card">
                 <div class="faq-question">
                     <i data-lucide="help-circle"></i> Como vou receber e acessar?
                 </div>
                 <div class="faq-answer">Você recebe no e-mail logo após o pagamento. Acesso imediato, sem espera. É só baixar o PDF e começar — do celular, tablet ou computador.</div>
             </div>
             
-            <div class="faq-item">
+            <div class="faq-item glass-card">
                 <div class="faq-question">
                     <i data-lucide="help-circle"></i> Funciona pro meu caso?
                 </div>
                 <div class="faq-answer">Sim. Serve pra apresentações de trabalho, reuniões com chefe, entrevistas, palestras, aulas, pitches. Se você trava ao falar em público — de qualquer forma — esse material foi feito pra ti.</div>
             </div>
             
-            <div class="faq-item">
+            <div class="faq-item glass-card">
                 <div class="faq-question">
                     <i data-lucide="help-circle"></i> E se eu não gostar?
                 </div>
                 <div class="faq-answer">Tu tem 7 dias de garantia incondicional. Não serviu? Pede reembolso por e-mail que a gente devolve sem perguntar. Simples assim.</div>
             </div>
             
-            <div class="faq-item">
+            <div class="faq-item glass-card">
                 <div class="faq-question">
                     <i data-lucide="help-circle"></i> Em quanto tempo vejo resultado?
                 </div>
@@ -290,7 +291,7 @@
     </section>
 
     <!-- Footer CTA -->
-    <section class="footer-cta">
+    <section class="footer-cta reveal">
         <div class="container">
             <h2>Isso é possível pra ti. E começa no primeiro exercício.</h2>
             <a href="#pricing" class="btn-primary" style="margin: 0 auto;">Quero os 30 Exercícios Agora <i data-lucide="arrow-right"></i></a>
@@ -300,6 +301,22 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Scroll Reveal Animation
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 50;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
     </script>
 </body>
 </html>
