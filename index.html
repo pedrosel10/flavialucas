@@ -8,108 +8,107 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css?v=3.0">
+    <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body>
 
-    <!-- Ambient Mesh Background -->
-    <div class="ambient-mesh"></div>
-
     <!-- Top Bar -->
     <div class="top-bar">
-        PRODUTO DIGITAL • ACESSO IMEDIATO • GARANTIA DE 7 DIAS
+        PRODUTO DIGITAL • ACESSO IMEDIATO • GARANTIA INCONDICIONAL
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-grid">
+    <section class="section hero">
+        <div class="container hero-layout">
             <div class="hero-content reveal">
-                <span class="eyebrow">VOCÊ TEM A IDEIA. A VOZ É QUE TRAVA.</span>
-                <h1 class="title-gradient">Entre na próxima reunião com voz firme e sem aperto no peito.</h1>
-                <p>Em 6 semanas, você chega mais preparada para apresentação, reunião ou entrevista com <strong>30 exercícios diários criados pela professora Flávia Lucas</strong>, sem decoreba, sem teoria solta e sem precisar nascer com dom.</p>
+                <span class="tag">Você tem a ideia. A voz é que trava.</span>
+                <h1 class="text-gradient">Entre na próxima reunião com voz firme e sem aperto no peito.</h1>
+                <p>Em 6 semanas, você chega preparada para qualquer apresentação ou entrevista com <strong>30 exercícios diários criados pela professora Flávia Lucas</strong>. Sem decoreba, sem teoria inútil e sem precisar de "dom".</p>
                 
-                <div class="hero-pills">
-                    <div class="hero-pill"><i data-lucide="file-text"></i> PDF + checklist + bônus</div>
-                    <div class="hero-pill"><i data-lucide="clock"></i> 15 a 25 min/dia</div>
-                    <div class="hero-pill"><i data-lucide="mic"></i> Destravar sua fala</div>
+                <div class="feature-list">
+                    <div class="feature-item"><i data-lucide="file-text"></i> PDF + Checklist Prático</div>
+                    <div class="feature-item"><i data-lucide="clock"></i> Apenas 15 a 25 min/dia</div>
+                    <div class="feature-item"><i data-lucide="mic"></i> Destrave sua fala</div>
                 </div>
 
-                <a href="#pricing" class="btn-primary">Quero Agora <i data-lucide="arrow-right"></i></a>
+                <a href="#checkout" class="btn">Quero os Exercícios <i data-lucide="arrow-right"></i></a>
                 
-                <div style="display: flex; align-items: center; gap: 8px; margin-top: 24px; font-size: var(--text-sm); color: var(--text-secondary); font-weight: 500;">
-                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 1.25rem; height: 1.25rem;"></i> 
-                    Garantia de 7 dias e acesso imediato por e-mail
+                <div style="display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 0.875rem; color: var(--tus-200); font-weight: 500;">
+                    <i data-lucide="shield-check" style="color: #10b981; width: 1.25rem; height: 1.25rem;"></i> 
+                    Risco Zero: Garantia de 7 dias e acesso imediato.
                 </div>
             </div>
             
-            <div class="hero-image reveal delay-100">
-                <img src="book_mockup.png" alt="Mockup 30 Exercícios de Confiança para Falar em Público">
+            <div class="hero-img-wrapper reveal delay-100" style="display: flex; justify-content: center;">
+                <div class="image-frame">
+                    <img src="book_mockup.png" alt="Mockup 30 Exercícios de Confiança para Falar em Público">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
+    <!-- Social Proof Section -->
+    <section class="section social-proof">
         <div class="container">
-            <span class="eyebrow orange reveal"><i data-lucide="star" style="width:14px;height:14px;"></i> RESULTADOS RELATADOS POR QUEM APLICOU</span>
+            <span class="tag highlight reveal"><i data-lucide="star" style="width:14px;height:14px;"></i> Resultados Comprovados</span>
             
             <div class="bento-grid">
-                <div class="testimonial-card glass-panel reveal">
-                    <div class="quote-mark"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
-                    <p class="testimonial-text">"Caramba, eu sempre travava. Fiz os primeiros exercícios e apresentei o relatório sem gaguejar. Voz firme, olhar no olho. Saí da reunião orgulhoso de mim."</p>
-                    <div class="author-block">
-                        <div class="avatar avatar-1">L</div>
-                        <div class="author-info">
+                <div class="review-card card reveal">
+                    <i data-lucide="message-square" style="width:24px;height:24px;"></i>
+                    <p>"Caramba, eu sempre travava. Fiz os primeiros exercícios e apresentei o relatório sem gaguejar. Voz firme, olhar no olho. Saí da reunião orgulhoso de mim."</p>
+                    <div class="reviewer">
+                        <div class="avatar t-1">L</div>
+                        <div class="reviewer-info">
                             <h4>Lucas</h4>
-                            <p>Analista de TI</p>
+                            <span style="color: var(--tus-200); font-size: 0.875rem;">Analista de TI</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card glass-panel reveal delay-100">
-                    <div class="quote-mark"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
-                    <p class="testimonial-text">"Eu salvo mil dicas, mas na hora H eu travava. Esses 30 exercícios me deram um começo pronto. Abri a fala em 20 segundos e prendi a sala."</p>
-                    <div class="author-block">
-                        <div class="avatar avatar-2">B</div>
-                        <div class="author-info">
+                <div class="review-card card reveal delay-100">
+                    <i data-lucide="message-square" style="width:24px;height:24px;"></i>
+                    <p>"Eu salvo mil dicas, mas na hora H eu travava. Esses 30 exercícios me deram um começo pronto. Abri a fala em 20 segundos e prendi a sala toda."</p>
+                    <div class="reviewer">
+                        <div class="avatar t-2">B</div>
+                        <div class="reviewer-info">
                             <h4>Bruna</h4>
-                            <p>Estagiária de Marketing</p>
+                            <span style="color: var(--tus-200); font-size: 0.875rem;">Estagiária de Marketing</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card glass-panel reveal delay-200">
-                    <div class="quote-mark"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
-                    <p class="testimonial-text">"Sério, eu falava igual metralhadora. Treinei respiração e pausas. Cronometrei: cai de 180 para 135 palavras por minuto. Ficou claro, sem parecer robô."</p>
-                    <div class="author-block">
-                        <div class="avatar avatar-3">D</div>
-                        <div class="author-info">
+                <div class="review-card card reveal delay-200">
+                    <i data-lucide="message-square" style="width:24px;height:24px;"></i>
+                    <p>"Sério, eu falava igual metralhadora. Treinei respiração e pausas. Cronometrei: cai de 180 para 135 palavras por minuto. Ficou claro, sem parecer robô."</p>
+                    <div class="reviewer">
+                        <div class="avatar t-3">D</div>
+                        <div class="reviewer-info">
                             <h4>Daniela</h4>
-                            <p>Belo Horizonte</p>
+                            <span style="color: var(--tus-200); font-size: 0.875rem;">Belo Horizonte</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card glass-panel reveal">
-                    <div class="quote-mark"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
-                    <p class="testimonial-text">"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem branco."</p>
-                    <div class="author-block">
-                        <div class="avatar avatar-4">R</div>
-                        <div class="author-info">
+                <div class="review-card card reveal">
+                    <i data-lucide="message-square" style="width:24px;height:24px;"></i>
+                    <p>"Achei que era mais um PDF qualquer, confesso. Me surpreendi. Treinei respostas rápidas e finalmente encarei perguntas chatas sem dar aquele branco."</p>
+                    <div class="reviewer">
+                        <div class="avatar t-4">R</div>
+                        <div class="reviewer-info">
                             <h4>Renato</h4>
-                            <p>Engenheiro Civil</p>
+                            <span style="color: var(--tus-200); font-size: 0.875rem;">Engenheiro Civil</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-card glass-panel reveal delay-100">
-                    <div class="quote-mark"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
-                    <p class="testimonial-text">"Mano, usei antes da entrevista e foi tiro certo. Estruturei pitch de 60 segundos, mantive contato visual e mãos calmas. Saí com convite pra segunda etapa."</p>
-                    <div class="author-block">
-                        <div class="avatar avatar-5">D</div>
-                        <div class="author-info">
+                <div class="review-card card reveal delay-100">
+                    <i data-lucide="message-square" style="width:24px;height:24px;"></i>
+                    <p>"Mano, usei antes da entrevista e foi tiro certo. Estruturei pitch de 60 segundos, mantive contato visual e mãos calmas. Saí com convite pra segunda etapa."</p>
+                    <div class="reviewer">
+                        <div class="avatar t-5">D</div>
+                        <div class="reviewer-info">
                             <h4>Diego</h4>
-                            <p>Estudante de Administração</p>
+                            <span style="color: var(--tus-200); font-size: 0.875rem;">Estudante de Administração</span>
                         </div>
                     </div>
                 </div>
@@ -118,79 +117,73 @@
     </section>
 
     <!-- Problem Section -->
-    <section class="problem">
+    <section class="section problem">
         <div class="container problem-layout">
-            <div class="problem-header reveal">
-                <span class="eyebrow">NA HORA DE FALAR</span>
-                <h2 class="title-gradient">Sua mente corre<br>e sua voz some.</h2>
+            <div class="problem-text reveal">
+                <span class="tag">O Desafio Oculto</span>
+                <h2 class="text-gradient">Sua mente corre<br>e sua voz some.</h2>
             </div>
             
             <div class="problem-list">
-                <div class="problem-item glass-panel reveal delay-100">
+                <div class="problem-item reveal delay-100">
                     <i data-lucide="alert-circle"></i>
                     <p>"Eu salvo mil dicas e, na hora H, eu travo."</p>
                 </div>
-                <div class="problem-item glass-panel reveal delay-100">
+                <div class="problem-item reveal delay-100">
                     <i data-lucide="alert-circle"></i>
                     <p>"Eu não sei por onde começar uma fala curta."</p>
                 </div>
-                <div class="problem-item glass-panel reveal delay-100">
+                <div class="problem-item reveal delay-100">
                     <i data-lucide="alert-circle"></i>
                     <p>"Será que eu tô falando rápido demais e ninguém entende?"</p>
                 </div>
-                <div class="problem-item glass-panel reveal delay-100">
+                <div class="problem-item reveal delay-100">
                     <i data-lucide="alert-circle"></i>
                     <p>"E se perguntarem algo simples e eu apagar tudo da cabeça?"</p>
                 </div>
-                <div class="problem-item glass-panel reveal delay-100">
+                <div class="problem-item reveal delay-100">
                     <i data-lucide="alert-circle"></i>
                     <p>"Todo mundo parece seguro e articulado, menos eu."</p>
                 </div>
-                <div class="problem-item glass-panel reveal delay-100">
-                    <i data-lucide="alert-circle"></i>
-                    <p>"Será que minha voz vai tremer na primeira frase da apresentação?"</p>
-                </div>
-                <div class="problem-item glass-panel reveal delay-100">
-                    <i data-lucide="alert-circle"></i>
-                    <p>"Eu ensaio horas e esqueço tudo quando abrem o microfone."</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- What You Get Section -->
-    <section class="wyg">
+    <!-- The Offer Section -->
+    <section class="section offer">
         <div class="container">
-            <div class="wyg-container glass-panel reveal">
-                <div class="wyg-visual">
-                    <img src="book_mockup.png" alt="Mockup 30 Exercícios">
+            <div class="offer-box card reveal">
+                <div class="offer-visual" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="image-frame">
+                        <img src="book_mockup.png" alt="Mockup 30 Exercícios">
+                    </div>
                 </div>
                 
-                <div class="wyg-content">
-                    <span class="eyebrow">VEJA TUDO QUE VOCÊ RECEBE</span>
-                    <h2>Os materiais foram pensados para tirar você da teoria e levar para uma situação real de fala.</h2>
+                <div class="offer-content">
+                    <span class="tag highlight">O Que Você Recebe</span>
+                    <h2>A ponte direta da teoria para a prática.</h2>
                     
-                    <div class="feature-row">
-                        <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
-                        <div class="feature-text">
-                            <h3>30 Exercícios de Confiança para Falar em Público <span class="badge">R$ 97</span></h3>
-                            <p>PDF principal que destrava a ansiedade de falar em público em 6 semanas, com 1 exercício guiado por dia.</p>
+                    <div class="deliverable">
+                        <div class="icon-box"><i data-lucide="check-circle-2"></i></div>
+                        <div class="del-text">
+                            <h3>Os 30 Exercícios de Confiança <span class="price-badge">R$ 97</span></h3>
+                            <p>O material principal que destrava a sua ansiedade em 6 semanas, com 1 exercício guiado diário e altamente aplicável.</p>
                         </div>
                     </div>
                     
-                    <div class="feature-row">
-                        <div class="feature-icon"><i data-lucide="check-square"></i></div>
-                        <div class="feature-text">
-                            <h3>Checklist de Prática (A4) <span class="badge">R$ 37</span></h3>
-                            <p>Acompanhe sua evolução marcando sua ansiedade antes e confiança depois de cada exercício.</p>
+                    <div class="deliverable">
+                        <div class="icon-box"><i data-lucide="check-square"></i></div>
+                        <div class="del-text">
+                            <h3>Checklist de Prática em A4 <span class="price-badge">R$ 37</span></h3>
+                            <p>Um rastreador visual de progresso. Acompanhe a diminuição da sua ansiedade dia após dia.</p>
                         </div>
                     </div>
                     
-                    <div class="feature-row bonus">
-                        <div class="feature-icon"><i data-lucide="gift"></i></div>
-                        <div class="feature-text">
-                            <h3 style="color: var(--accent-cta);">Bônus: Exercícios de Improvisação <span class="badge highlight">R$ 57</span></h3>
-                            <p>Treine resposta ágil sob pressão para parar de travar em perguntas inesperadas.</p>
+                    <div class="deliverable bonus">
+                        <div class="icon-box"><i data-lucide="gift"></i></div>
+                        <div class="del-text">
+                            <h3 style="color: var(--kb-400);">Exercícios de Improvisação <span class="price-badge blue">Bônus: R$ 57</span></h3>
+                            <p>Treinamento de resposta sob pressão. Desenvolva agilidade mental para nunca mais dar branco em perguntas difíceis.</p>
                         </div>
                     </div>
                 </div>
@@ -198,51 +191,53 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <div class="container" style="display: flex; justify-content: center;">
-            <div class="pricing-card glass-panel reveal">
-                <span class="eyebrow highlight" style="margin: 0 auto 1.5rem auto;">OFERTA ESPECIAL</span>
-                <p style="color: var(--text-secondary); font-weight: 500; font-size: var(--text-lg);">De R$ 191 por apenas</p>
-                <div class="price-tag">
+    <!-- Checkout Section -->
+    <section id="checkout" class="section checkout">
+        <div class="container">
+            <div class="checkout-card card reveal">
+                <span class="tag highlight" style="margin: 0 auto 24px auto;">Acesso Completo</span>
+                <p style="color: var(--tus-200); font-weight: 500; font-size: 1.125rem;">O pacote completo (Valor R$ 191) por apenas:</p>
+                <div class="price-huge">
                     <span>R$ 191</span>R$ 47
                 </div>
-                <p style="color: var(--text-secondary); font-size: var(--text-base); margin-bottom: 2.5rem; font-weight: 300;">
-                    Por tudo isso, você poderia esperar pagar bem mais. Em vez disso, você baixa agora e começa hoje. Se não servir para o seu momento, pede reembolso em até 7 dias e o valor volta sem pergunta desnecessária.
+                <p style="color: var(--tus-200); font-size: 1rem; margin-bottom: 40px; font-weight: 300;">
+                    Baixe agora e comece o primeiro exercício hoje. Se o método não funcionar para o seu momento, você tem 7 dias para solicitar o reembolso total, sem burocracia.
                 </p>
-                <a href="#" class="btn-primary" style="width: 100%;">Quero Garantir Agora <i data-lucide="arrow-right"></i></a>
-                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 1.5rem; font-size: var(--text-sm); color: var(--text-secondary); font-weight: 500;">
-                    <i data-lucide="shield-check" style="color: var(--clr-success); width: 1.25rem; height: 1.25rem;"></i> 
-                    Risco Zero: Garantia Incondicional de 7 dias
+                <a href="#" class="btn" style="width: 100%;">Finalizar Inscrição <i data-lucide="arrow-right"></i></a>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 24px; font-size: 0.875rem; color: var(--tus-200); font-weight: 500;">
+                    <i data-lucide="shield-check" style="color: #10b981; width: 1.25rem; height: 1.25rem;"></i> 
+                    Pagamento 100% Seguro
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Author Section -->
-    <section class="author">
-        <div class="container author-grid">
-            <div class="author-img reveal">
-                <img src="flavia_lucas_photo.png" alt="Flávia Lucas">
+    <section class="section author">
+        <div class="container author-layout">
+            <div class="author-pic reveal" style="display: flex; justify-content: center;">
+                <div class="image-frame">
+                    <img src="flavia_lucas_photo.png" alt="Flávia Lucas">
+                </div>
             </div>
-            <div class="author-info reveal delay-100">
-                <span class="eyebrow">SOBRE A AUTORA</span>
-                <h2>Eu sei como é encarar uma sala e sentir o peito apertar.</h2>
+            <div class="author-bio reveal delay-100">
+                <span class="tag">A Autora</span>
+                <h2 class="text-gradient">Eu sei como é encarar uma sala e sentir o peito apertar.</h2>
                 <p>Eu, Flávia Lucas, já passei por isso. Minha mão suou. Minha voz tremeu. Uma vez, esqueci a primeira frase e quis fugir da sala.</p>
-                <p>Depois de mais de 20 anos dando aula, descobri uma coisa que mudou meu jogo: falar em público não é dom. É treino específico. E a escola nunca te ensinou isso.</p>
+                <p>Depois de mais de 20 anos dando aula, descobri algo definitivo: falar em público não é um dom divino. É treino específico. E a escola nunca ensinou isso a você.</p>
                 
-                <div class="stats-list">
-                    <div class="stat-item">
+                <div class="cred-list">
+                    <div class="cred-item">
                         <i data-lucide="check-circle-2"></i>
-                        <p><strong style="color: var(--text-primary);">+1,6 milhão de seguidores</strong> construídos sobre ensinar a falar de um jeito que ninguém esquece.</p>
+                        <p><strong>+1,6 milhão de seguidores</strong> ensinando a falar com impacto e presença.</p>
                     </div>
-                    <div class="stat-item">
+                    <div class="cred-item">
                         <i data-lucide="check-circle-2"></i>
-                        <p><strong style="color: var(--text-primary);">+8.000 alunos formados</strong> em programas que moldaram vozes, presenças e trajetórias.</p>
+                        <p><strong>+8.000 alunos formados</strong> em programas de comunicação transformadores.</p>
                     </div>
-                    <div class="stat-item">
+                    <div class="cred-item">
                         <i data-lucide="check-circle-2"></i>
-                        <p>Mais de duas décadas de domínio sobre a língua, a palavra e a arte de comunicar.</p>
+                        <p><strong>+20 anos de domínio</strong> sobre a língua, a palavra e a arte de comunicar.</p>
                     </div>
                 </div>
             </div>
@@ -250,55 +245,31 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
+    <section class="section faq">
         <div class="container">
-            <h2 class="faq-title reveal">Perguntas Frequentes</h2>
-            
-            <div class="faq-wrapper">
-                <div class="faq-item glass-panel reveal">
-                    <div class="faq-q">
-                        <i data-lucide="help-circle"></i> Como vou receber e acessar?
-                    </div>
-                    <div class="faq-a">Você recebe no e-mail logo após o pagamento. Acesso imediato, sem espera. É só baixar o PDF e começar — do celular, tablet ou computador.</div>
+            <div class="faq-box">
+                <h2 class="reveal text-gradient">Perguntas Frequentes</h2>
+                
+                <div class="question card reveal">
+                    <h4><i data-lucide="help-circle"></i> Como vou receber e acessar?</h4>
+                    <p>Você recebe no e-mail logo após a aprovação do pagamento. O acesso é imediato. Basta baixar o PDF e começar do celular, tablet ou computador.</p>
                 </div>
                 
-                <div class="faq-item glass-panel reveal delay-100">
-                    <div class="faq-q">
-                        <i data-lucide="help-circle"></i> Funciona pro meu caso?
-                    </div>
-                    <div class="faq-a">Sim. Serve pra apresentações de trabalho, reuniões com chefe, entrevistas, palestras, aulas, pitches. Se você trava ao falar em público — de qualquer forma — esse material foi feito pra ti.</div>
+                <div class="question card reveal delay-100">
+                    <h4><i data-lucide="help-circle"></i> Funciona pro meu caso?</h4>
+                    <p>Sim. O método serve para apresentações de trabalho, reuniões corporativas, entrevistas, aulas e palestras. Se você trava ao falar em público, este material é a solução prática.</p>
                 </div>
                 
-                <div class="faq-item glass-panel reveal delay-200">
-                    <div class="faq-q">
-                        <i data-lucide="help-circle"></i> E se eu não gostar?
-                    </div>
-                    <div class="faq-a">Tu tem 7 dias de garantia incondicional. Não serviu? Pede reembolso por e-mail que a gente devolve sem perguntar. Simples assim.</div>
-                </div>
-                
-                <div class="faq-item glass-panel reveal delay-300">
-                    <div class="faq-q">
-                        <i data-lucide="help-circle"></i> Em quanto tempo vejo resultado?
-                    </div>
-                    <div class="faq-a">O primeiro exercício já reduz a aceleração que você sente antes de falar — mesmo dia. A mudança consistente acontece nas primeiras 2-3 semanas de prática. Em 6 semanas, você treinou todos os 30 exercícios.</div>
+                <div class="question card reveal delay-200">
+                    <h4><i data-lucide="help-circle"></i> Em quanto tempo vejo resultado?</h4>
+                    <p>O primeiro exercício já age reduzindo o batimento cardíaco antes da fala. A mudança sólida e consistente se estabelece ao completar os 30 dias de prática programada.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer CTA -->
-    <section class="footer-cta reveal">
-        <div class="container">
-            <h2 class="title-gradient">Isso é possível pra ti. E começa no primeiro exercício.</h2>
-            <a href="#pricing" class="btn-primary" style="margin: 0 auto;">Quero os 30 Exercícios Agora <i data-lucide="arrow-right"></i></a>
-        </div>
-    </section>
-
     <script>
-        // Initialize Icons
         lucide.createIcons();
-
-        // Reveal Animations
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -310,8 +281,8 @@
                 }
             }
         }
-        window.addEventListener("scroll", reveal);
-        reveal(); // Trigger on load
+        window.addEventListener("scroll", reveal, { passive: true });
+        reveal();
     </script>
 </body>
 </html>
